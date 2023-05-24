@@ -11,18 +11,20 @@
     <hr>
     <table>
         <thead>
-            <th>Matricula</th>
+            <th>Tipo</th>
             <th>Nome</th>
+            <th>Imo</th>
         </thead>
         <tbody>
-            <tr th:each="aluno:${alunos}">
-                <td th:text="${aluno.matricula}">
+            <tr th:each="navio:${navios}">
+                <td th:text="${navio.tipo}">
                     000000
-
                 </td>
-                <td th:text="${aluno.nome}">
+                <td th:text="${navio.nome}">
                     Michel 
-
+                </td>
+                <td th:text="${navio.imo}">
+                    4568544
                 </td>
             </tr>
         </tbody>
